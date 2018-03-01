@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>网易七鱼呼叫中心工具条</title>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+	<link rel='stylesheet' href='cc-toolbar.css'>
+	<script>
+		// Uncomment and fill the SETTINGS object in order to use hardcoded settings
+		//
+		// You don't need to set display_name nor uri, they can be set via HTTP form in
+		// the Login section of the web
+		//
+		// window.SETTINGS =
+		// {
+		// 	display_name        : null,
+		// 	uri                 : null,
+		// 	password            : null,
+		// 	socket              :
+		// 	{
+		// 		uri           : 'wss://sip.yourdomain.com',
+		// 		via_transport : 'auto',
+		// 	},
+		// 	registrar_server    : null,
+		// 	contact_uri         : null,
+		// 	authorization_user  : null,
+		// 	instance_id         : null,
+		// 	session_timers      : true,
+		// 	use_preloaded_route : false,
+		// 	pcConfig            :
+		// 	{
+		// 		rtcpMuxPolicy : 'negotiate',
+		// 		iceServers    :
+		// 		[
+		// 			{ urls : [ 'stun:stun.l.google.com:19302' ] }
+		// 		]
+		// 	},
+		// 	callstats           :
+		// 	{
+		// 		enabled   : false,
+		// 		AppID     : null,
+		// 		AppSecret : null
+		// 	}
+		// };
+	</script>
+
+	<script src='cc-toolbar.js'></script>
+</head>
+
+<body>
+	<div class="demo">
+		<div class="logo-container">
+			<div class="logo">
+				<h1><span class="color">CC</span>T<span class="small">ool</span>B<span class="small">ar</span></h1>
+			</div>
+		</div>
+		<div id='cc-toolbar-container'></div>
+	</div>
+</body>
+<style>
+	html {
+		height: 100%;
+		overflow: hidden;
+		font-family: 'Roboto';
+		font-size: 16px;
+		background-color: #444;
+	}
+
+	body {
+		height: 100%;
+		width: 100%;
+		background: none;
+	}
+
+	.demo {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+	    margin-top: 200px;
+	}
+
+	.logo-container {
+		margin: 20px auto;
+	}
+
+	.logo {
+		font-size: 4rem;
+	}
+
+	.logo h1 {
+		font-family: 'Poiret One';
+		font-weight: bold;
+		user-select: none;
+		color: rgba(255, 255, 255, 0.85);
+	}
+
+	.logo .color {
+		color: rgba(0, 239, 255, 0.85);
+	}
+
+	.logo .small {
+		font-size: .75em;
+	}
+
+	* {
+		box-sizing: border-box;
+		outline: none;
+	}
+</style>
+
+</html>

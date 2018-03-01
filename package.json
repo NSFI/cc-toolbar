@@ -1,0 +1,77 @@
+{
+  "name": "cc-toolbar",
+  "version": "1.0.0",
+  "description": "sailfish callcenter toolbar",
+  "main": "lib/index.js",
+  "title": "CCToolBar",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t [ babelify --presets [ react ] ] src/index.js -o build/cc-toolbar.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSFI/cc-toolbar.git"
+  },
+  "keywords": [
+    "sailfish",
+    "callcenter",
+    "toolbar"
+  ],
+  "author": "Morrain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NSFI/cc-toolbar/issues"
+  },
+  "homepage": "https://github.com/NSFI/cc-toolbar#readme",
+  "dependencies": {
+    "antd": "^3.2.2",
+    "babel-runtime": "^6.26.0",
+    "classnames": "^2.2.5",
+    "clone": "^2.1.1",
+    "debug": "~3.1.0",
+    "deepmerge": "^2.0.1",
+    "domready": "^1.0.8",
+    "material-ui": "^0.20.0",
+    "prop-types": "^15.6.0",
+    "qiyuconnect": "git+https://github.com/NSFI/7uConnect.git",
+    "random-string": "^0.2.0",
+    "react": "^16.2.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.2.0",
+    "react-notification-system": "^0.2.16",
+    "url-parse": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.22.0",
+    "browserify": "^14.5.0",
+    "del": "^3.0.0",
+    "envify": "^4.1.0",
+    "eslint": "^4.14.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "7.5.1",
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "gulp-css-base64": "^1.3.4",
+    "gulp-eslint": "^4.0.0",
+    "gulp-header": "^1.8.9",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.7.0",
+    "gulp-touch": "^1.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "nib": "^1.1.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.9.0"
+  }
+}
