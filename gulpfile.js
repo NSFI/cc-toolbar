@@ -241,7 +241,8 @@ gulp.task('css', () =>
 		.pipe(stylus(
 			{
 				use      : nib(),
-				compress : true
+				compress : true,
+				'include css': true
 			}))
 		.on('error', logError)
 		.pipe(cssBase64(
